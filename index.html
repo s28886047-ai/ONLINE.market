@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0c0f" />
+  <meta name="description" content="SAM AUTO — O‘zbekistondagi premium avtomobil bozori. Tekshirilgan avtomobillar, shaffof narxlar, 0% bo‘lib to‘lash va 12 oylik kafolat." />
+  <title>SAM AUTO — Premium avtomobil bozori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0c0f'/%3E%3Cpath d='M40 22c-2.5-2.6-5.2-3.8-8.4-3.8-4 0-6.8 2.2-6.8 5.5 0 3.6 3.6 4.6 7.7 5.6 4.2.9 7.7 2.1 7.7 6 0 4.1-3.4 6.7-8 6.7-3.7 0-6.7-1.3-8.9-4' fill='none' stroke='%23ffd60a' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg class="icon-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6.4 6.4l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.6.5 2.5.6a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4M6 10l6-6 6 6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19a9 9 0 1 1 15 0"/><path d="m12 14 3.5-3.5"/><circle cx="12" cy="15" r="1.4"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-fuel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/><path d="M3 11h12M15 7h2a2 2 0 0 1 2 2v7a2 2 0 0 0 4 0V9l-3-3"/><path d="M2 22h14"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H5a2 2 0 0 1 0-4h13v4"/><path d="M3 5v14a2 2 0 0 0 2 2h15V7H5a2 2 0 0 0-2 2"/><path d="M16 13h.01"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m10.8 12.2 8.7-8.7M16 7l2 2M18 5l2 2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.1-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6 7v6l-4 2v-8Z"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2" fill="#0b0c0f"/><circle cx="15" cy="12" r="2" fill="#0b0c0f"/><circle cx="8" cy="18" r="2" fill="#0b0c0f"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M3 17v-4l2.2-5.2A2 2 0 0 1 7 6.5h10a2 2 0 0 1 1.8 1.3L21 13v4"/><path d="M3 13h18"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 2.2 18a2 2 0 0 0 1.7 3h16.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+    <symbol id="i-log-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-side">
+        <span class="topbar-item"><svg class="icon"><use href="#i-location"/></svg> Toshkent, O‘zbekiston</span>
+        <span class="topbar-item topbar-optional"><svg class="icon"><use href="#i-clock"/></svg> Dush–Shan, 09:00–20:00</span>
+      </div>
+      <div class="topbar-side topbar-right">
+        <span class="topbar-item topbar-optional"><svg class="icon"><use href="#i-shield"/></svg> 12 oylik kafolat</span>
+        <a class="topbar-phone" href="tel:+998712007700"><svg class="icon"><use href="#i-phone"/></svg> +998 71 200 77 00</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand-logo" href="#home" aria-label="SAM AUTO bosh sahifa">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none"><path d="M22 2.5 40 12.5v19L22 41.5 4 31.5v-19L22 2.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M27.5 16c-1.7-2-3.7-2.9-6-2.9-3 0-5 1.7-5 4.2 0 2.8 2.8 3.5 5.8 4.2 3 .7 5.7 1.5 5.7 4.5 0 3-2.5 5-5.8 5-2.7 0-4.9-1-6.4-3" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="logo-text"><strong>SAM<span>AUTO</span></strong><small>PREMIUM AUTO MARKET</small></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <a href="#cars" class="nav-link is-active" data-nav>Avtomobillar</a>
+        <a href="#brands" class="nav-link" data-nav>Brendlar</a>
+        <a href="#why" class="nav-link" data-nav>Biz haqimizda</a>
+        <a href="#sell" class="nav-link" data-nav>Sotish</a>
+        <a href="#contact" class="nav-link" data-nav>Aloqa</a>
+      </nav>
+
+      <div class="header-actions">
+        <form class="header-search" id="headerSearch" role="search" autocomplete="off">
+          <svg class="icon"><use href="#i-search"/></svg>
+          <input id="headerSearchInput" type="search" placeholder="Marka yoki model..." aria-label="Avtomobil qidirish" />
+          <button type="submit" aria-label="Qidirish"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+        </form>
+        <button class="icon-button search-jump" type="button" data-focus-search aria-label="Katalogdan qidirish">
+          <svg class="icon"><use href="#i-search"/></svg>
+        </button>
+        <button class="icon-button favorites-btn" id="favoritesBtn" type="button" aria-label="Sevimlilar">
+          <svg class="icon"><use href="#i-heart"/></svg>
+          <span class="count-badge" id="favoritesBadge" hidden>0</span>
+        </button>
+        <button class="account-btn" id="accountBtn" type="button" aria-label="Hisobga kirish">
+          <span class="account-avatar"><svg class="icon"><use href="#i-user"/></svg></span>
+          <span class="account-label" id="accountLabel">Kirish</span>
+        </button>
+        <button class="btn btn-primary header-cta" type="button" data-open-sell>
+          <svg class="icon"><use href="#i-plus"/></svg><span>E’lon joylash</span>
+        </button>
+        <button class="icon-button menu-btn" id="menuBtn" type="button" aria-label="Menyu" aria-expanded="false" aria-controls="mobileNav">
+          <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> O‘zbekistonning premium avto bozori</span>
+          <h1 class="hero-title">Orzuingizdagi avtomobil — <br /><span class="accent">bir qidiruvda.</span></h1>
+          <p class="hero-lead">Tekshirilgan avtomobillar, shaffof narxlar va 0% bo‘lib to‘lash. SAM AUTO bilan keyingi avtomobilingizni ishonch bilan tanlang.</p>
+
+          <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
+            <label class="hero-field hero-field-query">
+              <span class="sr-only">Qidiruv</span>
+              <svg class="icon"><use href="#i-search"/></svg>
+              <input id="heroQuery" type="search" placeholder="BMW, Camaro, elektro..." />
+            </label>
+            <label class="hero-field">
+              <span class="sr-only">Brend</span>
+              <select id="heroBrand">
+                <option value="all">Barcha brendlar</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="BYD">BYD</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Audi">Audi</option>
+                <option value="Kia">Kia</option>
+                <option value="Hyundai">Hyundai</option>
+              </select>
+            </label>
+            <label class="hero-field">
+              <span class="sr-only">Budjet</span>
+              <select id="heroBudget">
+                <option value="all">Budjet</option>
+                <option value="0-400000000">400 mln gacha</option>
+                <option value="400000000-700000000">400–700 mln</option>
+                <option value="700000000-1000000000">700 mln – 1 mlrd</option>
+                <option value="1000000000-Infinity">1 mlrddan yuqori</option>
+              </select>
+            </label>
+            <button class="btn btn-primary hero-search-btn" type="submit">
+              <span>Qidirish</span><svg class="icon"><use href="#i-search"/></svg>
+            </button>
+          </form>
+
+          <div class="hero-stats">
+            <div class="hero-stat"><strong><span data-total-listings>13</span>+</strong><span>tekshirilgan e’lon</span></div>
+            <div class="hero-stat"><strong>7</strong><span>premium brend</span></div>
+            <div class="hero-stat"><strong>0%</strong><span>ustama kredit</span></div>
+            <div class="hero-stat"><strong>4.9</strong><span>xaridor bahosi</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <article class="hero-featured">
+            <img src="public/cars/corvette.jpg" alt="Chevrolet Corvette C8 Stingray" width="1920" height="1001" />
+            <div class="hero-featured-shade"></div>
+            <span class="hero-tag"><span class="pulse-dot"></span> Hafta tanlovi</span>
+            <span class="hero-featured-year">2021</span>
+            <div class="hero-featured-info">
+              <div class="hero-featured-meta">
+                <span>Chevrolet</span>
+                <h2>Corvette C8 Stingray</h2>
+                <div class="hero-featured-specs">
+                  <span><svg class="icon"><use href="#i-gauge"/></svg> 12 000 km</span>
+                  <span><svg class="icon"><use href="#i-gear"/></svg> Avtomat</span>
+                </div>
+              </div>
+              <div class="hero-price">
+                <small>Narxi</small>
+                <strong>1 250 000 000 <em>so‘m</em></strong>
+                <button type="button" class="hero-detail-btn" data-detail="corvette-c8">Batafsil <svg class="icon"><use href="#i-arrow-up-right"/></svg></button>
+              </div>
+            </div>
+          </article>
+          <div class="hero-float-card">
+            <span class="hero-float-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <div><strong>Tekshirilgan</strong><span>120 bandli diagnostika</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="brands-section" id="brands">
+      <div class="container">
+        <div class="section-head compact reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> Brendlar</span>
+            <h2>O‘zingizga mos brendni tanlang</h2>
+          </div>
+          <p>Har bir brend bo‘yicha faqat tekshirilgan avtomobillar.</p>
+        </div>
+        <div class="brand-grid reveal" id="brandGrid"></div>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section class="catalog" id="cars">
+      <div class="container">
+        <div class="section-head catalog-heading reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> Katalog</span>
+            <h2>Avtomobillar</h2>
+          </div>
+          <p>Barcha e’lonlar texnik diagnostikadan o‘tgan. Narxlar shaffof va yakuniy.</p>
+        </div>
+
+        <div class="catalog-layout">
+          <aside class="filter-panel" id="filterPanel" aria-label="Avtomobil filtrlari">
+            <div class="filter-panel-head">
+              <h3><svg class="icon"><use href="#i-filter"/></svg> Filtrlar <span class="filter-count-pill" id="filterCountPill" hidden>0</span></h3>
+              <button class="icon-button filter-close" type="button" data-close-filters aria-label="Filtrlarni yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+            </div>
+
+            <div class="filter-scroll">
+              <div class="filter-group">
+                <span class="filter-title">Brend</span>
+                <div class="filter-options" data-filter-group="brand">
+                  <button class="filter-option is-active" type="button" data-filter="brand" data-value="all"><span>Barchasi</span><span class="filter-option-count">13</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="BMW"><span>BMW</span><span class="filter-option-count">2</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="Mercedes-Benz"><span>Mercedes-Benz</span><span class="filter-option-count">2</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="BYD"><span>BYD</span><span class="filter-option-count">2</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="Chevrolet"><span>Chevrolet</span><span class="filter-option-count">2</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="Audi"><span>Audi</span><span class="filter-option-count">2</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="Kia"><span>Kia</span><span class="filter-option-count">2</span></button>
+                  <button class="filter-option" type="button" data-filter="brand" data-value="Hyundai"><span>Hyundai</span><span class="filter-option-count">1</span></button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <span class="filter-title">Kuzov turi</span>
+                <div class="filter-options" data-filter-group="body">
+                  <button class="filter-option is-active" type="button" data-filter="body" data-value="all"><span>Barchasi</span></button>
+                  <button class="filter-option" type="button" data-filter="body" data-value="Sedan"><span>Sedan</span></button>
+                  <button class="filter-option" type="button" data-filter="body" data-value="SUV"><span>SUV</span></button>
+                  <button class="filter-option" type="button" data-filter="body" data-value="Kupe"><span>Kupe</span></button>
+                  <button class="filter-option" type="button" data-filter="body" data-value="Krossover"><span>Krossover</span></button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <span class="filter-title">Narx</span>
+                <label class="select-wrap">
+                  <span class="sr-only">Narx oralig‘i</span>
+                  <select id="priceFilter">
+                    <option value="all">Barchasi</option>
+                    <option value="0-400000000">400 mln gacha</option>
+                    <option value="400000000-700000000">400–700 mln</option>
+                    <option value="700000000-1000000000">700 mln – 1 mlrd</option>
+                    <option value="1000000000-Infinity">1 mlrddan yuqori</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="filter-group">
+                <span class="filter-title">Ishlab chiqarilgan yil</span>
+                <div class="filter-options" data-filter-group="year">
+                  <button class="filter-option is-active" type="button" data-filter="year" data-value="all"><span>Barchasi</span></button>
+                  <button class="filter-option" type="button" data-filter="year" data-value="2024"><span>2024 va yangi</span></button>
+                  <button class="filter-option" type="button" data-filter="year" data-value="2022"><span>2022 va yangi</span></button>
+                  <button class="filter-option" type="button" data-filter="year" data-value="2020"><span>2020 va yangi</span></button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <span class="filter-title">Uzatish qutisi</span>
+                <div class="filter-options" data-filter-group="transmission">
+                  <button class="filter-option is-active" type="button" data-filter="transmission" data-value="all"><span>Barchasi</span></button>
+                  <button class="filter-option" type="button" data-filter="transmission" data-value="Avtomat"><span>Avtomat</span></button>
+                  <button class="filter-option" type="button" data-filter="transmission" data-value="Mexanika"><span>Mexanika</span></button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <span class="filter-title">Yoqilg‘i</span>
+                <div class="filter-options" data-filter-group="fuel">
+                  <button class="filter-option is-active" type="button" data-filter="fuel" data-value="all"><span>Barchasi</span></button>
+                  <button class="filter-option" type="button" data-filter="fuel" data-value="Benzin"><span>Benzin</span></button>
+                  <button class="filter-option" type="button" data-filter="fuel" data-value="Elektro"><span>Elektro</span></button>
+                  <button class="filter-option" type="button" data-filter="fuel" data-value="Gibrid"><span>Gibrid</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-actions">
+              <button class="btn btn-primary" type="button" id="applyFilters">Natijalarni ko‘rish</button>
+              <button class="btn btn-ghost" type="button" id="clearFilters"><svg class="icon"><use href="#i-refresh"/></svg> Tozalash</button>
+            </div>
+          </aside>
+
+          <div class="catalog-main">
+            <div class="catalog-toolbar">
+              <label class="catalog-search">
+                <svg class="icon"><use href="#i-search"/></svg>
+                <input id="catalogSearch" type="search" placeholder="Katalogdan qidirish..." aria-label="Katalogdan qidirish" autocomplete="off" />
+              </label>
+              <div class="toolbar-actions">
+                <button class="btn btn-ghost filter-toggle" id="filterToggle" type="button" aria-controls="filterPanel" aria-expanded="false">
+                  <svg class="icon"><use href="#i-sliders"/></svg> Filtrlar
+                  <span class="filter-count-pill" id="filterCount" hidden>0</span>
+                </button>
+                <label class="select-wrap sort-wrap">
+                  <span class="sr-only">Saralash</span>
+                  <select id="sortSelect">
+                    <option value="recommended">Tavsiya etilgan</option>
+                    <option value="price-asc">Narx: arzondan</option>
+                    <option value="price-desc">Narx: qimmatdan</option>
+                    <option value="year-desc">Yangi yil</option>
+                    <option value="mileage-asc">Kam yurgan</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="catalog-meta">
+              <p id="resultCount">13 ta avtomobil topildi</p>
+              <div class="active-filters" id="activeFilters"></div>
+            </div>
+
+            <div class="cars-grid" id="carsGrid"></div>
+
+            <div class="empty-state" id="emptyState" hidden>
+              <span class="empty-icon"><svg class="icon"><use href="#i-car"/></svg></span>
+              <h3>Hech narsa topilmadi</h3>
+              <p>Filtrlarni o‘zgartirib ko‘ring yoki qidiruvni tozalang.</p>
+              <button class="btn btn-primary" type="button" id="emptyResetBtn"><svg class="icon"><use href="#i-refresh"/></svg> Filtrlarni tozalash</button>
+            </div>
+
+            <div class="load-more-wrap" id="loadMoreWrap">
+              <button class="btn btn-outline" type="button" id="loadMoreBtn">Yana ko‘rsatish <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+              <span id="loadMoreLabel">4 ta avtomobil qoldi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="why-section" id="why">
+      <div class="container">
+        <div class="section-head light-head reveal">
+          <div>
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Nega SAM AUTO?</span>
+            <h2>Avtomobil sotib olish<br />endi stress emas.</h2>
+          </div>
+          <p>Har bir bosqichda shaffoflik, tekshiruv va insoniy yondashuv. Biz faqat mashina sotmaymiz — ishonch quramiz.</p>
+        </div>
+
+        <div class="feature-grid reveal">
+          <article class="feature-card">
+            <span class="feature-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <h3>Tekshirilgan tarix</h3>
+            <p>Har bir avtomobil 120 bandli texnik diagnostika va yuridik tekshiruvdan o‘tadi.</p>
+            <span class="feature-index">01</span>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg class="icon"><use href="#i-wallet"/></svg></span>
+            <h3>0% bo‘lib to‘lash</h3>
+            <p>20% boshlang‘ich to‘lov va 36 oygacha muddatli to‘lov. Yashirin komissiyalar yo‘q.</p>
+            <span class="feature-index">02</span>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
+            <h3>12 oylik kafolat</h3>
+            <p>Dvigatel va transmissiya uchun rasmiy kafolat. Yo‘lda qolsangiz — yordam chaqiramiz.</p>
+            <span class="feature-index">03</span>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon"><svg class="icon"><use href="#i-key"/></svg></span>
+            <h3>1 kunda rasmiylashtirish</h3>
+            <p>Hujjatlar, sug‘urta va davlat ro‘yxatidan o‘tkazish — barchasi bitta joyda.</p>
+            <span class="feature-index">04</span>
+          </article>
+        </div>
+
+        <div class="process-block reveal">
+          <div class="process-head">
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Qanday ishlaydi</span>
+            <h2>Uch qadamda kalitni oling</h2>
+          </div>
+          <div class="process-grid">
+            <article class="process-step">
+              <span class="process-number">01</span>
+              <h3>Tanlang</h3>
+              <p>Filtrlar orqali o‘zingizga mos avtomobilni toping va sevimlilarga saqlang.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">02</span>
+              <h3>Bog‘laning</h3>
+              <p>Mutaxassis bilan gaplashib, sinov drayviga yoziling. Barcha savollarga javob olasiz.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">03</span>
+              <h3>Haydang</h3>
+              <p>To‘lov va hujjatlarni bir kunda yakunlab, yangi avtomobilingizni qabul qiling.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELL CTA -->
+    <section class="sell-section" id="sell">
+      <div class="container sell-inner">
+        <div class="sell-copy reveal">
+          <span class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Sotuvchilar uchun</span>
+          <h2>Avtomobilingizni<br />SAM AUTO’da soting.</h2>
+          <p>Har oy 10 000 dan ortiq xaridor bizning platformadan avtomobil qidiradi. E’loningizni 2 daqiqada joylashtiring — qolganini biz hal qilamiz.</p>
+          <div class="sell-actions">
+            <button class="btn btn-dark" type="button" data-open-sell><svg class="icon"><use href="#i-plus"/></svg> E’lon joylash</button>
+            <a class="btn btn-outline-dark" href="#contact">Maslahat olish</a>
+          </div>
+        </div>
+        <div class="sell-side reveal">
+          <span class="sell-watermark" aria-hidden="true">SOT</span>
+          <div class="sell-stats">
+            <div><strong>2 daqiqa</strong><span>e’lon joylash vaqti</span></div>
+            <div><strong>10 000+</strong><span>potensial xaridor</span></div>
+            <div><strong>0%</strong><span>e’lon uchun komissiya</span></div>
+          </div>
+          <div class="sell-note"><svg class="icon"><use href="#i-check-circle"/></svg> E’loningiz moderatsiyadan so‘ng 30 daqiqada paydo bo‘ladi.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> Sharhlar</span>
+            <h2>Xaridorlar nima deydi?</h2>
+          </div>
+          <div class="rating-summary"><strong>4.9</strong><span class="stars" aria-label="5 yulduzdan 4.9"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><span>1 248 ta sharh</span></div>
+        </div>
+        <div class="testimonial-grid reveal">
+          <article class="testimonial-card">
+            <div class="testimonial-top"><span class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><span>2 hafta oldin</span></div>
+            <p>“BMW X5 ni onlayn tanladim. Sinov drayvi va hujjatlar bir kunda yakunlandi. Narx saytda ko‘rsatilganidek bo‘ldi — hech qanday qo‘shimcha to‘lov yo‘q.”</p>
+            <div class="testimonial-person"><span class="avatar">AK</span><div><strong>Aziz Karimov</strong><span>BMW X5 xDrive40i</span></div></div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-top"><span class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><span>1 oy oldin</span></div>
+            <p>“Birinchi marta elektromobil olyapman. Jamoa batareya holati va kredit shartlarini batafsil tushuntirdi. Ioniq 5 dan juda mamnunman.”</p>
+            <div class="testimonial-person"><span class="avatar">MR</span><div><strong>Malika Rahimova</strong><span>Hyundai Ioniq 5</span></div></div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-top"><span class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><span>3 hafta oldin</span></div>
+            <p>“Avtomobilimni SAM AUTO orqali sotdim. E’lon 2 daqiqada chiqdi, birinchi xaridor 3 kunda keldi. Komissiya ham yo‘q.”</p>
+            <div class="testimonial-person"><span class="avatar">JT</span><div><strong>Javohir Toshev</strong><span>Mercedes-Benz C300</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Savol-javob</span>
+          <h2>Savollaringiz<br />bormi?</h2>
+          <p>Eng ko‘p beriladigan savollarga javoblar. Boshqa savol bo‘lsa, mutaxassislarimiz 24/7 aloqada.</p>
+          <a href="#contact" class="btn btn-outline">Mutaxassis bilan bog‘lanish <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+        </div>
+        <div class="faq-list reveal">
+          <article class="faq-item is-open">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>Avtomobillar texnik tekshiruvdan o‘tganmi?</span>
+              <span class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-answer"><div><p>Ha. Har bir avtomobil 120 bandli diagnostika, yuridik tekshiruv va yo‘l sinovidan o‘tadi. Tekshiruv natijasi bilan e’lon sahifasida tanishishingiz mumkin.</p></div></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Kredit yoki bo‘lib to‘lash imkoniyati bormi?</span>
+              <span class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-answer"><div><p>Ha. 20% boshlang‘ich to‘lov bilan 36 oygacha 0% ustama asosida bo‘lib to‘lash mumkin. Shartlar bank hamkori tomonidan tasdiqlanadi.</p></div></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Sinov drayviga qanday yozilaman?</span>
+              <span class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-answer"><div><p>Avtomobil kartochkasidagi “Sinov drayvi” tugmasini bosing, qulay sana va vaqtni tanlang. Mutaxassisimiz 15 daqiqa ichida aloqaga chiqadi.</p></div></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Avtomobilni qaytarish kafolati bormi?</span>
+              <span class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-answer"><div><p>Ha. Qabul qilgan kundan boshlab 72 soat ichida yashirin texnik nuqson aniqlansa, avtomobilni almashtirish yoki to‘lovni qaytarish mumkin.</p></div></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>To‘lov qanday amalga oshiriladi?</span>
+              <span class="faq-icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-answer"><div><p>Naqd, plastik karta yoki bank o‘tkazmasi orqali. Shartnoma notarius tasdiqlashidan o‘tadi, barcha to‘lovlar shaffof va hujjatlashtirilgan.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-info reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Aloqa</span>
+          <h2>Showroom’ga<br />tashrif buyuring.</h2>
+          <p>Mutaxassislarimiz avtomobil tanlash, kredit va hujjatlar bo‘yicha bepul maslahat beradi.</p>
+          <div class="contact-list">
+            <a class="contact-item" href="tel:+998712007700">
+              <span class="contact-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+              <span><small>Qo‘ng‘iroq qilish</small><strong>+998 71 200 77 00</strong></span>
+              <svg class="icon contact-arrow"><use href="#i-arrow-up-right"/></svg>
+            </a>
+            <a class="contact-item" href="mailto:info@samauto.uz">
+              <span class="contact-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+              <span><small>Elektron pochta</small><strong>info@samauto.uz</strong></span>
+              <svg class="icon contact-arrow"><use href="#i-arrow-up-right"/></svg>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon"><svg class="icon"><use href="#i-location"/></svg></span>
+              <span><small>Showroom</small><strong>Toshkent, Yunusobod tumani, Amir Temur shoh ko‘chasi 108</strong></span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
+              <span><small>Ish vaqti</small><strong>Dushanba–Shanba, 09:00–20:00</strong></span>
+            </div>
+          </div>
+          <div class="showroom-card" aria-hidden="true">
+            <div class="showroom-grid"></div>
+            <span class="showroom-pin"><svg class="icon"><use href="#i-location"/></svg></span>
+            <span class="showroom-label">SAM AUTO Showroom</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-heading">
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Xabar yuborish</span>
+            <h3>Savolingiz bormi?<br />Yozib qoldiring.</h3>
+          </div>
+          <div class="form-grid">
+            <label class="form-field">Ismingiz
+              <input type="text" id="contactName" placeholder="Ism va familiya" autocomplete="name" />
+            </label>
+            <label class="form-field">Telefon raqam
+              <input type="tel" id="contactPhone" placeholder="+998 90 000 00 00" autocomplete="tel" />
+            </label>
+            <label class="form-field form-field-full">Mavzu
+              <span class="select-wrap">
+                <select id="contactTopic">
+                  <option value="Avtomobil sotib olish">Avtomobil sotib olish</option>
+                  <option value="Avtomobil sotish">Avtomobil sotish</option>
+                  <option value="Kredit va bo‘lib to‘lash">Kredit va bo‘lib to‘lash</option>
+                  <option value="Boshqa savol">Boshqa savol</option>
+                </select>
+              </span>
+            </label>
+            <label class="form-field form-field-full">Xabar
+              <textarea id="contactMessage" rows="4" placeholder="Qanday yordam bera olamiz?"></textarea>
+            </label>
+          </div>
+          <p class="form-error" id="contactError" role="alert" hidden></p>
+          <p class="form-success" id="contactSuccess" role="status" hidden><svg class="icon"><use href="#i-check-circle"/></svg> Xabaringiz qabul qilindi. Tez orada bog‘lanamiz.</p>
+          <button class="btn btn-primary contact-submit" type="submit"><svg class="icon"><use href="#i-send"/></svg> Xabar yuborish</button>
+          <p class="form-note">Ma’lumotlaringiz uchinchi shaxslarga berilmaydi.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand-logo" href="#home" aria-label="SAM AUTO bosh sahifa">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none"><path d="M22 2.5 40 12.5v19L22 41.5 4 31.5v-19L22 2.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M27.5 16c-1.7-2-3.7-2.9-6-2.9-3 0-5 1.7-5 4.2 0 2.8 2.8 3.5 5.8 4.2 3 .7 5.7 1.5 5.7 4.5 0 3-2.5 5-5.8 5-2.7 0-4.9-1-6.4-3" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+            </span>
+            <span class="logo-text"><strong>SAM<span>AUTO</span></strong><small>PREMIUM AUTO MARKET</small></span>
+          </a>
+          <p>Tekshirilgan avtomobillar va shaffof narxlar. O‘zbekistonda avtomobil sotib olishning yangi standarti.</p>
+          <a class="footer-phone" href="tel:+998712007700"><svg class="icon"><use href="#i-phone"/></svg> +998 71 200 77 00</a>
+        </div>
+
+        <nav class="footer-col" aria-label="Bo‘limlar">
+          <h3>Bo‘limlar</h3>
+          <a href="#cars">Avtomobillar</a>
+          <a href="#brands">Brendlar</a>
+          <a href="#why">Biz haqimizda</a>
+          <a href="#sell">Avtomobil sotish</a>
+          <a href="#faq">Savol-javob</a>
+          <a href="#contact">Aloqa</a>
+        </nav>
+
+        <div class="footer-col" aria-label="Brendlar">
+          <h3>Brendlar</h3>
+          <button type="button" data-footer-brand="BMW">BMW</button>
+          <button type="button" data-footer-brand="Mercedes-Benz">Mercedes-Benz</button>
+          <button type="button" data-footer-brand="BYD">BYD</button>
+          <button type="button" data-footer-brand="Chevrolet">Chevrolet</button>
+          <button type="button" data-footer-brand="Audi">Audi</button>
+          <button type="button" data-footer-brand="Kia">Kia</button>
+          <button type="button" data-footer-brand="Hyundai">Hyundai</button>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h3>Yangiliklardan xabardor bo‘ling</h3>
+          <p>Yangi e’lonlar va maxsus takliflar haqida birinchilardan bo‘lib biling.</p>
+          <form id="newsletterForm" novalidate>
+            <label class="newsletter-field">
+              <span class="sr-only">Elektron pochta</span>
+              <svg class="icon"><use href="#i-mail"/></svg>
+              <input type="email" id="newsletterEmail" placeholder="Email manzilingiz" autocomplete="email" />
+              <button type="submit" aria-label="Obuna bo‘lish"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+            </label>
+            <p class="newsletter-note" id="newsletterNote" role="status"></p>
+          </form>
+          <span class="footer-hours"><svg class="icon"><use href="#i-clock"/></svg> Dush–Shan, 09:00–20:00</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footerYear">2026</span> SAM AUTO. Barcha huquqlar himoyalangan.</p>
+        <p class="footer-made">Toshkent, O‘zbekiston · Premium avtomobil bozori</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Yuqoriga qaytish"><svg class="icon"><use href="#i-arrow-up"/></svg></button>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <!-- Mobile navigation -->
+  <aside class="drawer drawer-right mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-labelledby="mobileNavTitle" aria-hidden="true" hidden>
+    <div class="drawer-head">
+      <span class="drawer-title" id="mobileNavTitle">Menyu</span>
+      <button class="icon-button" type="button" data-close aria-label="Menyuni yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="drawer-body mobile-nav-body">
+      <nav class="mobile-nav-links" aria-label="Mobil navigatsiya">
+        <a href="#home"><span>Bosh sahifa</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="#cars"><span>Avtomobillar</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="#brands"><span>Brendlar</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="#why"><span>Biz haqimizda</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="#sell"><span>Avtomobil sotish</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="#faq"><span>Savol-javob</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="#contact"><span>Aloqa</span><svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a class="mobile-nav-phone" href="tel:+998712007700"><svg class="icon"><use href="#i-phone"/></svg><span><small>Qo‘ng‘iroq qilish</small>+998 71 200 77 00</span></a>
+        <button class="btn btn-primary" type="button" data-open-sell><svg class="icon"><use href="#i-plus"/></svg> E’lon joylash</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Favorites drawer -->
+  <aside class="drawer drawer-right favorites-drawer" id="favoritesDrawer" role="dialog" aria-modal="true" aria-labelledby="favoritesTitle" aria-hidden="true" hidden>
+    <div class="drawer-head">
+      <div>
+        <span class="drawer-eyebrow">Saqlangan</span>
+        <h2 class="drawer-title" id="favoritesTitle">Sevimlilar <span class="drawer-count" id="favoritesDrawerCount">0</span></h2>
+      </div>
+      <button class="icon-button" type="button" data-close aria-label="Sevimlilarni yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="drawer-body" id="favoritesList"></div>
+    <div class="drawer-foot" id="favoritesFooter" hidden>
+      <button class="btn btn-primary" type="button" id="viewFavoritesBtn">Katalogda ko‘rish</button>
+      <button class="btn btn-ghost" type="button" id="clearFavoritesBtn"><svg class="icon"><use href="#i-trash"/></svg> Tozalash</button>
+    </div>
+  </aside>
+
+  <!-- Car detail -->
+  <div class="modal detail-modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="detailTitle" aria-hidden="true" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+      <div class="detail-media">
+        <img id="detailImage" alt="" />
+        <span class="badge" id="detailBadge" hidden></span>
+        <button class="detail-fav" id="detailFavBtn" type="button" aria-label="Sevimlilarga qo‘shish"><svg class="icon"><use href="#i-heart"/></svg></button>
+      </div>
+      <div class="detail-content">
+        <div class="detail-main">
+          <div class="detail-heading">
+            <span class="car-kicker" id="detailBrandYear"></span>
+            <h2 id="detailTitle"></h2>
+            <div class="detail-meta-line">
+              <span><svg class="icon"><use href="#i-location"/></svg> <span id="detailLocation"></span></span>
+              <span class="meta-dot"></span>
+              <span><svg class="icon"><use href="#i-eye"/></svg> <span id="detailViews"></span></span>
+            </div>
+          </div>
+          <div class="detail-specs" id="detailSpecs"></div>
+          <div class="detail-section">
+            <h3>Tavsif</h3>
+            <p id="detailDesc"></p>
+          </div>
+          <div class="detail-section">
+            <h3>Qulayliklar</h3>
+            <div class="feature-chips" id="detailFeatures"></div>
+          </div>
+        </div>
+        <aside class="detail-side">
+          <div class="detail-price-card">
+            <span class="detail-price-label">Narxi</span>
+            <strong class="detail-price" id="detailPrice"></strong>
+            <span class="detail-old-price" id="detailOld" hidden></span>
+            <div class="installment" id="detailInstallment"></div>
+            <div class="detail-actions">
+              <button class="btn btn-primary" id="revealPhoneBtn" type="button"><svg class="icon"><use href="#i-phone"/></svg> Telefon raqamni ko‘rish</button>
+              <a class="btn btn-dark" id="callBtn" href="tel:+998902007700" hidden><svg class="icon"><use href="#i-phone"/></svg> Qo‘ng‘iroq qilish</a>
+              <button class="btn btn-ghost" id="testDriveBtn" type="button"><svg class="icon"><use href="#i-calendar"/></svg> Sinov drayvi</button>
+            </div>
+            <p class="detail-note"><svg class="icon"><use href="#i-shield"/></svg> 120 bandli tekshiruv · 12 oy kafolat</p>
+          </div>
+          <div class="seller-card">
+            <span class="seller-logo">SA</span>
+            <div><strong>SAM AUTO Premium</strong><span><svg class="icon"><use href="#i-check-circle"/></svg> Tekshirilgan sotuvchi</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth -->
+  <div class="modal auth-modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle" aria-hidden="true" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+      <div class="auth-head">
+        <span class="auth-mark"><svg class="icon"><use href="#i-user"/></svg></span>
+        <h2 id="authTitle">Xush kelibsiz</h2>
+        <p id="authSubtitle">Hisobingizga kirib sevimlilar va e’lonlaringizni boshqaring.</p>
+      </div>
+      <div class="auth-tabs" role="tablist" aria-label="Kirish yoki ro‘yxatdan o‘tish">
+        <button class="auth-tab is-active" id="loginTab" type="button" role="tab" aria-selected="true" aria-controls="loginForm" data-auth-tab="login">Kirish</button>
+        <button class="auth-tab" id="registerTab" type="button" role="tab" aria-selected="false" aria-controls="registerForm" data-auth-tab="register">Ro‘yxatdan o‘tish</button>
+      </div>
+      <form class="auth-form" id="loginForm" novalidate>
+        <label class="form-field">Telefon yoki email
+          <input type="text" id="loginContact" placeholder="+998 90 000 00 00" autocomplete="username" />
+        </label>
+        <label class="form-field">Parol
+          <input type="password" id="loginPassword" placeholder="••••••" autocomplete="current-password" />
+        </label>
+        <p class="form-error" id="loginError" role="alert" hidden></p>
+        <button class="btn btn-primary btn-block" type="submit">Kirish</button>
+      </form>
+      <form class="auth-form" id="registerForm" novalidate hidden>
+        <label class="form-field">Ismingiz
+          <input type="text" id="registerName" placeholder="Ism va familiya" autocomplete="name" />
+        </label>
+        <label class="form-field">Telefon raqam
+          <input type="tel" id="registerContact" placeholder="+998 90 000 00 00" autocomplete="tel" />
+        </label>
+        <label class="form-field">Parol
+          <input type="password" id="registerPassword" placeholder="Kamida 4 belgi" autocomplete="new-password" />
+        </label>
+        <p class="form-error" id="registerError" role="alert" hidden></p>
+        <button class="btn btn-primary btn-block" type="submit">Hisob yaratish</button>
+      </form>
+      <p class="auth-note">Davom etish orqali siz foydalanish shartlari va maxfiylik siyosatiga rozilik bildirasiz.</p>
+    </div>
+  </div>
+
+  <!-- Account -->
+  <div class="modal account-modal" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountName" aria-hidden="true" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+      <div class="account-head">
+        <span class="account-avatar account-avatar-lg"><svg class="icon"><use href="#i-user"/></svg></span>
+        <div><span class="drawer-eyebrow">Hisobingiz</span><h2 id="accountName">Foydalanuvchi</h2><p id="accountContact"></p></div>
+      </div>
+      <div class="account-stats">
+        <div><strong id="accountFavCount">0</strong><span>sevimli avtomobil</span></div>
+        <div><strong id="accountListingCount">0</strong><span>joylangan e’lon</span></div>
+      </div>
+      <div class="account-actions">
+        <button class="btn btn-primary" type="button" id="accountFavoritesBtn"><svg class="icon"><use href="#i-heart"/></svg> Sevimlilarni ko‘rish</button>
+        <button class="btn btn-ghost" type="button" data-open-sell><svg class="icon"><use href="#i-plus"/></svg> E’lon joylash</button>
+        <button class="btn btn-ghost btn-danger" type="button" id="logoutBtn"><svg class="icon"><use href="#i-log-out"/></svg> Chiqish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sell listing -->
+  <div class="modal sell-modal" id="sellModal" role="dialog" aria-modal="true" aria-labelledby="sellTitle" aria-hidden="true" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+      <div class="modal-heading">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> 2 daqiqada</span>
+        <h2 id="sellTitle">E’lon joylash</h2>
+        <p>Avtomobilingiz ma’lumotlarini kiriting. Moderatsiyadan so‘ng e’lon katalogda paydo bo‘ladi.</p>
+      </div>
+      <form id="sellForm" novalidate>
+        <div class="upload-row">
+          <label class="upload-box" for="sellPhoto">
+            <img id="sellPreview" alt="Yuklangan avtomobil rasmi" hidden />
+            <span class="upload-hint" id="sellUploadHint">
+              <svg class="icon"><use href="#i-image"/></svg>
+              <strong>Foto yuklash</strong>
+              <span>JPG yoki PNG · 6 MB gacha</span>
+            </span>
+            <input id="sellPhoto" type="file" accept="image/jpeg,image/png,image/webp" hidden />
+          </label>
+          <div class="upload-info">
+            <strong>Yaxshi foto — tez sotilish.</strong>
+            <p>Avtomobilni yorug‘ joyda, old va yon tomondan suratga oling. Birinchi rasm asosiy bo‘ladi.</p>
+          </div>
+        </div>
+        <div class="form-grid">
+          <label class="form-field">Brend
+            <span class="select-wrap"><select id="sellBrand"></select></span>
+          </label>
+          <label class="form-field">Model
+            <input type="text" id="sellModel" placeholder="Masalan: Camry" />
+          </label>
+          <label class="form-field">Ishlab chiqarilgan yil
+            <input type="number" id="sellYear" min="1990" max="2026" placeholder="2022" inputmode="numeric" />
+          </label>
+          <label class="form-field">Narx (so‘m)
+            <input type="number" id="sellPrice" min="0" step="1000000" placeholder="450 000 000" inputmode="numeric" />
+          </label>
+          <label class="form-field">Yurgan masofa (km)
+            <input type="number" id="sellMileage" min="0" placeholder="45 000" inputmode="numeric" />
+          </label>
+          <label class="form-field">Kuzov turi
+            <span class="select-wrap"><select id="sellBody"><option>Sedan</option><option>SUV</option><option>Kupe</option><option>Krossover</option></select></span>
+          </label>
+          <label class="form-field">Uzatish qutisi
+            <span class="select-wrap"><select id="sellTransmission"><option>Avtomat</option><option>Mexanika</option></select></span>
+          </label>
+          <label class="form-field">Yoqilg‘i
+            <span class="select-wrap"><select id="sellFuel"><option>Benzin</option><option>Elektro</option><option>Gibrid</option></select></span>
+          </label>
+          <label class="form-field form-field-full">Telefon raqam
+            <input type="tel" id="sellPhone" placeholder="+998 90 000 00 00" autocomplete="tel" />
+          </label>
+          <label class="form-field form-field-full">Qo‘shimcha ma’lumot
+            <textarea id="sellDesc" rows="3" placeholder="Avtomobil holati, qo‘shimcha jihozlar..."></textarea>
+          </label>
+        </div>
+        <p class="form-error" id="sellError" role="alert" hidden></p>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit"><svg class="icon"><use href="#i-plus"/></svg> E’lonni joylashtirish</button>
+          <button class="btn btn-ghost" type="button" data-close>Bekor qilish</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Test drive -->
+  <div class="modal request-modal" id="testDriveModal" role="dialog" aria-modal="true" aria-labelledby="testDriveTitle" aria-hidden="true" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Yopish"><svg class="icon"><use href="#i-close"/></svg></button>
+      <div class="modal-heading">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> Bepul</span>
+        <h2 id="testDriveTitle">Sinov drayvi</h2>
+        <p>Qulay sana va vaqtni tanlang. Mutaxassisimiz 15 daqiqa ichida aloqaga chiqadi.</p>
+      </div>
+      <form id="testDriveForm" novalidate>
+        <div class="form-grid">
+          <label class="form-field form-field-full">Ismingiz
+            <input type="text" id="tdName" placeholder="Ism va familiya" autocomplete="name" />
+          </label>
+          <label class="form-field form-field-full">Telefon raqam
+            <input type="tel" id="tdPhone" placeholder="+998 90 000 00 00" autocomplete="tel" />
+          </label>
+          <label class="form-field">Qulay sana
+            <input type="date" id="tdDate" />
+          </label>
+          <label class="form-field">Qulay vaqt
+            <span class="select-wrap"><select id="tdTime"><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select></span>
+          </label>
+        </div>
+        <p class="form-error" id="tdError" role="alert" hidden></p>
+        <button class="btn btn-primary btn-block" type="submit"><svg class="icon"><use href="#i-calendar"/></svg> So‘rov yuborish</button>
+        <p class="form-note">Sinov drayvi haydovchilik guvohnomasi asosida o‘tkaziladi.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <div class="noscript-note">SAM AUTO katalogi ishlashi uchun brauzeringizda JavaScript yoqilgan bo‘lishi kerak.</div>
+  </noscript>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
